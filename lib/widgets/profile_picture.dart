@@ -17,7 +17,7 @@ class ProfilePicture extends StatelessWidget {
               height: 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(60),
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
@@ -31,9 +31,9 @@ class ProfilePicture extends StatelessWidget {
               width: 95,
               height: 95,
               decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: NetworkImage(
-                      'https://scontent.fcgk3-1.fna.fbcdn.net/v/t39.30808-6/276134885_5039583986103565_6561059216942357195_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHVHkjop6p8tJ0fGzCu_uNkcfeXpvg969lx95em-D3r2V7NFUShSTgRi7Dwo8-A87Vp1Gok0AR0Z9CipZVL1937&_nc_ohc=C_oods3wSu4AX8b0UAm&tn=rutDsRCFhExKSoiz&_nc_zt=23&_nc_ht=scontent.fcgk3-1.fna&oh=00_AT-N0RqCIlZANjmdVlF9q_Lc7MTeyFaG34TxD9qIFkYGMw&oe=62C5BEE8'),
+                      'https://avatars.githubusercontent.com/u/92290110?s=400&u=0d86dc67b98e6ac76a4d97835aa7e715021cad0a&v=4'),
                   fit: BoxFit.cover,
                 ),
                 border: Border.all(

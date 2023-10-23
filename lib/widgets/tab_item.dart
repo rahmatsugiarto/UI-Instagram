@@ -4,17 +4,17 @@ class TabItem extends StatelessWidget {
   final IconData icon;
   final bool isActive;
 
-  TabItem({required this.icon, this.isActive = false});
+  const TabItem({super.key, required this.icon, this.isActive = false});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
         child: Container(
-            padding: EdgeInsets.all(12),
-            child: Icon(icon),
+            padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
                 border: Border(
                     bottom: BorderSide(
-                        color: isActive ? Colors.black : Colors.white)))));
+                        color: isActive ? Colors.black : Colors.white))),
+            child: Icon(icon)));
   }
 }

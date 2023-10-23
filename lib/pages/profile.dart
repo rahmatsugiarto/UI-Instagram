@@ -16,14 +16,14 @@ class ProfilePage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        systemOverlayStyle: SystemUiOverlayStyle(
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.white,
           statusBarIconBrightness: Brightness.dark, // For Android (dark icons)
           statusBarBrightness: Brightness.light, // For iOS (light icons)
         ),
         backgroundColor: Colors.white,
         centerTitle: false,
-        title: Row(
+        title: const Row(
           children: <Widget>[
             Text(
               'irahmatsugiarto_',
@@ -35,19 +35,19 @@ class ProfilePage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.add_circle_outline, color: Colors.black),
+            icon: const Icon(Icons.add_circle_outline, color: Colors.black),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.menu, color: Colors.black),
+            icon: const Icon(Icons.menu, color: Colors.black),
             onPressed: () {},
           ),
         ],
       ),
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Row(
               children: [
                 ProfilePicture(),
@@ -64,19 +64,19 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 10),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const SizedBox(height: 10),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               'Rahmat Sugiarto',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: RichText(
-              text: TextSpan(
+              text: const TextSpan(
                   text: "Mobile Developer(Android & Flutter) at Telkomsigma ",
                   style: TextStyle(color: Colors.black),
                   children: [
@@ -87,14 +87,7 @@ class ProfilePage extends StatelessWidget {
                   ]),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
-            child: Text(
-              "rahmatsugiarto.app/",
-              style: TextStyle(color: Colors.blue),
-            ),
-          ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Row(
@@ -103,7 +96,7 @@ class ProfilePage extends StatelessWidget {
                   flex: 5,
                   child: OutlinedButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Edit Profile",
                       style: TextStyle(color: Colors.black),
                     ),
@@ -113,14 +106,14 @@ class ProfilePage extends StatelessWidget {
                   flex: 1,
                   child: OutlinedButton(
                     onPressed: () {},
-                    child: Icon(Icons.person_add_alt_1_outlined,
+                    child: const Icon(Icons.person_add_alt_1_outlined,
                         color: Colors.black),
                   ),
                 ),
               ],
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: SingleChildScrollView(
@@ -135,7 +128,7 @@ class ProfilePage extends StatelessWidget {
                       StoryItem(title: "Sleep Call", numPhoto: 6),
                     ],
                   ))),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Row(
             children: [
               TabItem(icon: Icons.grid_on_outlined, isActive: true),
@@ -145,8 +138,8 @@ class ProfilePage extends StatelessWidget {
           GridView.builder(
             itemCount: 100,
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            physics: const NeverScrollableScrollPhysics(),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3, mainAxisSpacing: 5, crossAxisSpacing: 5),
             itemBuilder: (context, index) => Container(
               child: Image.network(
@@ -158,7 +151,7 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",

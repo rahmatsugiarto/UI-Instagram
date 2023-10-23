@@ -4,7 +4,7 @@ class StoryItem extends StatelessWidget {
   final String title;
   final int numPhoto;
 
-  StoryItem({required this.title, required this.numPhoto});
+  const StoryItem({super.key, required this.title, required this.numPhoto});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class StoryItem extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Text(title)
         ],
       ),

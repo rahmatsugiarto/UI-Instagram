@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class StoryItemAdd extends StatelessWidget {
+  const StoryItemAdd({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -25,12 +27,12 @@ class StoryItemAdd extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                   color: Colors.white,
                 ),
-                child: Icon(Icons.add),
+                child: const Icon(Icons.add),
               ),
             ],
           ),
-          SizedBox(height: 5),
-          Text("New")
+          const SizedBox(height: 5),
+          const Text("New")
         ],
       ),
     );
